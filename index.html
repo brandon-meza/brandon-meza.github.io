@@ -134,6 +134,7 @@
       <a href="#research">Research</a>
       <a href="#collab">Collaborations</a>
       <a href="#publications">Publications</a>
+      <a href="#software">Software</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -145,7 +146,8 @@
       <div>
         <img class="photo" src="assets/profile.jpg" alt="Brandon Meza-González">
         <h1>Brandon Meza-González</h1>
-        <div class="title">Program-Specific Assistant Professor · <a href="http://pixy.polym.kyoto-u.ac.jp/research_en.html" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1.5px">Numata Laboratory ↗</a>, Graduate School of Engineering, Kyoto University</div>
+        <div class="title" style="margin-bottom:6px">Program-Specific Assistant Professor · <a href="http://pixy.polym.kyoto-u.ac.jp/research_en.html" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1.5px">Numata Laboratory ↗</a>, Graduate School of Engineering, Kyoto University</div>
+        <div class="title" style="font-size:.95rem">MEXT <a href="https://dxmt.nims.go.jp/en/about" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1.5px">DxMT ↗</a> · DX-Poly, Kyoto hub — Data-Driven Materials R&amp;D Project</div>
         <div class="tag">I use molecular simulation and interpretable AI to understand how molecules move, react, and self-organize.</div>
         <div class="cta">
           <a class="btn primary" href="#research">Explore the research</a>
@@ -227,6 +229,18 @@
     <div class="eyebrow">Research</div>
     <h2>What I work on</h2>
     <div class="cards">
+      <div class="card">
+        <div class="thumb"><img src="assets/condensate.png" alt="Slab direct-coexistence schematic: coarse-grained chains forming a condensed phase in equilibrium with a dilute phase, with the corresponding density profile"></div>
+        <div class="card-body">
+          <span class="lab">Phase behaviour</span>
+          <h3>Condensates &amp; protein self-assembly</h3>
+          <ul>
+            <li>Why peptides and spider-silk proteins demix into liquid droplets</li>
+            <li>Coarse-grained force fields, enhanced sampling, collective-mode kinetics</li>
+          </ul>
+          <a class="more" href="http://pixy.polym.kyoto-u.ac.jp/research_en.html" target="_blank" rel="noopener">Numata Laboratory →</a>
+        </div>
+      </div>
       <div class="card">
         <div class="thumb"><img src="assets/pore.png" alt="MspA nanopore with translocating ssDNA"></div>
         <div class="card-body">
@@ -344,6 +358,32 @@
     <div class="pub"><div class="yr">2017</div><div class="meta"><div class="t"><a href="https://doi.org/10.1021/acs.jpcc.6b11652" target="_blank" rel="noopener">Structural and Electronic Properties of Hydrated Vₙ–H₂O and Vₙ⁺–H₂O Systems</a></div><div class="a">B. Meza et al.</div><div class="j">The Journal of Physical Chemistry C</div></div></div>
 
     <p style="margin-top:22px;font-size:.95rem;color:var(--muted)">Datasets: <a href="https://zenodo.org/records/11406726" target="_blank" rel="noopener">AIMEl-DB — Atomic Properties for 38K small organic molecules</a> (Zenodo, 2024). Full list on <a href="https://researchmap.jp/brandonmeza?lang=en" target="_blank" rel="noopener">researchmap</a> · <a href="https://orcid.org/0000-0003-4500-5721" target="_blank" rel="noopener">ORCID</a> · <a href="https://scholar.google.com/citations?user=EG8Rm0YAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+  </div>
+</section>
+
+<section id="software">
+  <div class="wrap">
+    <div class="eyebrow">Open source</div>
+    <h2>Software</h2>
+    <p style="max-width:70ch;color:var(--muted);margin-top:-6px">Simulation and analysis tools I build and release. Installable packages with test suites, not one-off scripts.</p>
+    <div class="hl">
+      <a class="hl-card" href="https://github.com/brandon-meza/polyphasemd-release" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Coarse-grained MD · MIT</div>
+        <h3>PolyPhaseMD</h3>
+        <div class="v">Unified workflow for peptide liquid–liquid phase separation: simulation, analysis and cross-force-field benchmarking across Martini&nbsp;3-IDP, HPS-SS and mPiPi. GROMACS and LAMMPS back ends, with CI.</div>
+      </a>
+      <a class="hl-card" href="https://github.com/brandon-meza/fes2xyz-release" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Enhanced sampling · GPL-3.0</div>
+        <h3>fes2xyz</h3>
+        <div class="v">Turns metadynamics free-energy surfaces into minima, transition barriers and minimum-energy pathways, then maps them back to atomic structures. Reads PLUMED output.</div>
+      </a>
+      <a class="hl-card" href="https://github.com/brandon-meza/pepml-release" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Machine learning · MIT</div>
+        <h3>pepml</h3>
+        <div class="v">Configuration-driven framework for peptide-reactivity modelling. Descriptor families must earn their place in a pre-registered ablation, with nested cross-validation and permutation-null controls.</div>
+      </a>
+    </div>
+    <p style="font-size:.95rem;color:var(--muted)">Also: <a href="https://github.com/brandon-meza/claude-kit-release" target="_blank" rel="noopener">claude-kit</a> — a research-agent toolkit encoding planning, validation and review conventions. All repositories on <a href="https://github.com/brandon-meza" target="_blank" rel="noopener">GitHub</a>.</p>
   </div>
 </section>
 

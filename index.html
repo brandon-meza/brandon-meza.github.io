@@ -366,57 +366,62 @@
     <div class="eyebrow">Open source</div>
     <h2>Software</h2>
     <p style="max-width:70ch;color:var(--muted);margin-top:-6px">Simulation, analysis and AI tools I build and release. Installable packages with test suites, and evaluation studies with controls, not one-off scripts.</p>
-    <div class="hl">
-      <a class="hl-card" href="https://github.com/brandon-meza/polyphasemd-release" target="_blank" rel="noopener" style="color:inherit">
-        <div class="badge">Coarse-grained MD · MIT</div>
-        <h3>PolyPhaseMD</h3>
-        <div class="v">Unified workflow for peptide liquid–liquid phase separation: simulation, analysis and cross-force-field benchmarking across Martini&nbsp;3-IDP, HPS-SS and mPiPi. GROMACS and LAMMPS back ends, with CI.</div>
-      </a>
-      <a class="hl-card" href="https://github.com/brandon-meza/fes2xyz-release" target="_blank" rel="noopener" style="color:inherit">
-        <div class="badge">Enhanced sampling · GPL-3.0</div>
-        <h3>fes2xyz</h3>
-        <div class="v">Turns metadynamics free-energy surfaces into minima, transition barriers and minimum-energy pathways, then maps them back to atomic structures. Reads PLUMED output.</div>
-      </a>
-      <a class="hl-card" href="https://github.com/brandon-meza/pepml-release" target="_blank" rel="noopener" style="color:inherit">
-        <div class="badge">Machine learning · MIT</div>
-        <h3>pepml</h3>
-        <div class="v">Configuration-driven framework for peptide-reactivity modelling. Descriptor families must earn their place in a pre-registered ablation, with nested cross-validation and permutation-null controls.</div>
-      </a>
-    </div>
-    <div class="hl">
-      <a class="hl-card" href="https://github.com/brandon-meza/robot-vlm-generalization" target="_blank" rel="noopener" style="color:inherit">
-        <div class="badge">Vision-language models · MIT</div>
-        <h3>robot-vlm-generalization</h3>
-        <div class="v">Fine-tunes Qwen3-VL (LoRA) on real robot video from AIRoA MoMa to recognise 17 skills: 77% accuracy versus 15% before fine-tuning, falling to 61% for unseen operators and 54% for unseen robots. Shuffled-label and text-only controls, conformal prediction sets, 4-bit inference.</div>
-      </a>
-      <a class="hl-card" href="https://github.com/brandon-meza/ja-rag-cite-or-abstain" target="_blank" rel="noopener" style="color:inherit">
-        <div class="badge">LLMs and RAG · MIT</div>
-        <h3>ja-rag-cite-or-abstain</h3>
-        <div class="v">Local Japanese retrieval-augmented generation that cites a source or answers &ldquo;not found&rdquo;: 64% correct on 300 questions and &ldquo;not found&rdquo; on 92% of unanswerable ones. Retrieval ablations with bootstrap intervals and an LLM judge calibrated against reference grades.</div>
-      </a>
-      <a class="hl-card" href="https://github.com/brandon-meza/ja-rag-service" target="_blank" rel="noopener" style="color:inherit">
-        <div class="badge">LLM serving · MIT</div>
-        <h3>ja-rag-service</h3>
-        <div class="v">The Japanese RAG pipeline as a tested FastAPI service that cites a source or says &ldquo;not found&rdquo;: 63% correct on 300 questions through the API, no measured difference from the offline evaluation (&minus;1.7 points). Prometheus metrics, a container, a load test and a CI retrieval-regression gate.</div>
-      </a>
-    </div>
+<!-- BEGIN PROJECT CARDS -->
+    <div class="eyebrow" style="margin-top:6px">Language models: training, evaluation and serving</div>
     <div class="hl">
       <a class="hl-card" href="https://github.com/brandon-meza/chem-rl" target="_blank" rel="noopener" style="color:inherit">
-        <div class="badge">LLM post-training · MIT</div>
+        <div class="badge">LLM post-training &middot; MIT</div>
         <h3>chem-rl</h3>
         <div class="v">GRPO versus rejection-sampling SFT on Qwen3-1.7B, with rewards a program checks (RDKit), plus random- and format-only-reward controls. A negative result: the 14.8-point test gain was answer-format repair; with the format ignored, no trained arm beats the base model.</div>
       </a>
-      <a class="hl-card" href="https://github.com/brandon-meza/molgen" target="_blank" rel="noopener" style="color:inherit">
-        <div class="badge">Generative chemistry · MIT</div>
-        <h3>molgen</h3>
-        <div class="v">A small SELFIES transformer that generates drug-like molecules, scored with the MOSES benchmark against its published baselines. The metric code is checked against MOSES's published values first; two controls that must fail; property conditioning checked with RDKit.</div>
+      <a class="hl-card" href="https://github.com/brandon-meza/ja-rag-service" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">LLM serving &middot; MIT</div>
+        <h3>ja-rag-service</h3>
+        <div class="v">The Japanese RAG pipeline as a tested FastAPI service that cites a source or says &ldquo;not found&rdquo;: 63% correct on 300 questions through the API, &minus;2.3 points against the offline evaluation on the same questions [&minus;5.0, +0.0]. Prometheus metrics, a container, a load test and a CI retrieval-regression gate.</div>
       </a>
-      <a class="hl-card" href="https://github.com/brandon-meza/membrane-screen" target="_blank" rel="noopener" style="color:inherit">
-        <div class="badge">Materials informatics · MIT</div>
-        <h3>membrane-screen</h3>
-        <div class="v">Ranks polymer membranes by CO<sub>2</sub> permeability on the public Bath dataset, evaluated by held-out polymer and held-out chemical family. A data audit found errors in the public structure column; split-conformal intervals and a shuffled-label control.</div>
+      <a class="hl-card" href="https://github.com/brandon-meza/ja-rag-cite-or-abstain" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Retrieval-augmented generation &middot; MIT</div>
+        <h3>ja-rag-cite-or-abstain</h3>
+        <div class="v">Local Japanese retrieval-augmented generation that cites a source or answers &ldquo;not found&rdquo;: 65% correct on 300 questions and &ldquo;not found&rdquo; on 93% of unanswerable ones. Retrieval ablations with bootstrap intervals and an LLM judge calibrated against reference grades.</div>
       </a>
     </div>
+    <div class="eyebrow" style="margin-top:6px">Models for video, molecules and materials</div>
+    <div class="hl">
+      <a class="hl-card" href="https://github.com/brandon-meza/robot-vlm-generalization" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Vision-language models &middot; MIT</div>
+        <h3>robot-vlm-generalization</h3>
+        <div class="v">Fine-tunes Qwen3-VL (LoRA) on real robot video from AIRoA MoMa to recognise 17 skills: 77% accuracy versus 15% before fine-tuning, falling to 61% for unseen operators and 54% for unseen robots. Shuffled-label and text-only controls, conformal prediction sets, 4-bit inference.</div>
+      </a>
+      <a class="hl-card" href="https://github.com/brandon-meza/molgen" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Generative chemistry &middot; MIT</div>
+        <h3>molgen</h3>
+        <div class="v">A small SELFIES transformer that generates drug-like molecules, scored with the MOSES benchmark against its published baselines (FCD/Test 0.85, several times worse than CharRNN and VAE). The metric code is checked against MOSES's published values first; two controls that must fail; property conditioning checked with RDKit.</div>
+      </a>
+      <a class="hl-card" href="https://github.com/brandon-meza/membrane-screen" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Materials informatics &middot; MIT</div>
+        <h3>membrane-screen</h3>
+        <div class="v">Ranks polymer membranes by CO<sub>2</sub> permeability on the public Bath dataset, evaluated by held-out polymer (0.62 log10 Barrer, Spearman 0.72) and by held-out chemical family. A data audit found errors in the public structure column; split-conformal intervals and a shuffled-label control.</div>
+      </a>
+    </div>
+    <div class="eyebrow" style="margin-top:6px">Molecular simulation and property modelling</div>
+    <div class="hl">
+      <a class="hl-card" href="https://github.com/brandon-meza/polyphasemd-release" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Coarse-grained MD &middot; MIT</div>
+        <h3>PolyPhaseMD</h3>
+        <div class="v">Unified workflow for peptide liquid&ndash;liquid phase separation: simulation, analysis and cross-force-field benchmarking across Martini&nbsp;3-IDP, HPS-SS and mPiPi. GROMACS and LAMMPS back ends, with CI.</div>
+      </a>
+      <a class="hl-card" href="https://github.com/brandon-meza/pepml-release" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Machine learning &middot; MIT</div>
+        <h3>pepml</h3>
+        <div class="v">Configuration-driven framework for peptide-reactivity modelling. Descriptor families must earn their place in a pre-registered ablation, with nested cross-validation and permutation-null controls.</div>
+      </a>
+      <a class="hl-card" href="https://github.com/brandon-meza/fes2xyz-release" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Enhanced sampling &middot; GPL-3.0</div>
+        <h3>fes2xyz</h3>
+        <div class="v">Turns metadynamics free-energy surfaces into minima, transition barriers and minimum-energy pathways, then maps them back to atomic structures. Reads PLUMED output.</div>
+      </a>
+    </div>
+    <!-- END PROJECT CARDS -->
     <p style="font-size:.95rem;color:var(--muted)">Also released: <a href="https://github.com/brandon-meza/claude-kit-release" target="_blank" rel="noopener">claude-kit</a> — a research-agent toolkit encoding planning, validation and review conventions · <a href="https://github.com/brandon-meza/j-lens-release" target="_blank" rel="noopener">j-lens</a> — an Android application in Kotlin built on ML Kit · <a href="https://github.com/brandon-meza/termtheme-release" target="_blank" rel="noopener">termtheme</a> — reversible terminal theming for bash, tmux and the shell prompt. All repositories on <a href="https://github.com/brandon-meza" target="_blank" rel="noopener">GitHub</a>.</p>
   </div>
 </section>
@@ -428,7 +433,7 @@
     <div class="tl">
       <div class="tl-item"><div class="y">2026 – present</div><div class="h">Program-Specific Assistant Professor — Kyoto University</div><div class="s">Graduate School of Engineering, <a href="http://pixy.polym.kyoto-u.ac.jp/research_en.html" target="_blank" rel="noopener">Numata Laboratory</a>.</div></div>
       <div class="tl-item"><div class="y">2025 – 2026</div><div class="h">Postdoctoral Researcher — iCeMS, Kyoto University</div><div class="s">Collective dynamics and adaptive transport in soft and membrane materials, in the <a href="https://www.packwood.icems.kyoto-u.ac.jp/" target="_blank" rel="noopener">Packwood group</a>.</div></div>
-      <div class="tl-item"><div class="y">2023</div><div class="h">Invited Ph.D. Researcher — University of Zurich</div><div class="s">Department of Chemistry, <a href="https://www.chem.uzh.ch/en/research/groups/hutter.html" target="_blank" rel="noopener">Hutter group</a>; methods and formalism for molecular simulation.</div></div>
+      <div class="tl-item"><div class="y">2023</div><div class="h">Invited Ph.D. Researcher — University of Zurich</div><div class="s">Department of Chemistry, <a href="https://www.chem.uzh.ch/en/research/groups.html" target="_blank" rel="noopener">Hutter group</a>; methods and formalism for molecular simulation.</div></div>
       <div class="tl-item"><div class="y">2020 – 2024</div><div class="h">Ph.D. in Chemistry — National Autonomous University of Mexico (UNAM)</div><div class="s">Computational chemistry, <a href="https://sites.google.com/view/cortes-guzman-lab/home" target="_blank" rel="noopener">Cortés-Guzmán group</a>. Earlier: M.Sc. 2018–2020 and B.Sc. 2012–2017, also at UNAM.</div></div>
     </div>
     <p style="margin-top:26px;font-size:.95rem;color:var(--muted)">Peer reviewer for <em>ACS Biomaterials Science &amp; Engineering</em> and <em>Digital Discovery</em>. University-level teaching in atomic &amp; molecular structure, classical mechanics, and general chemistry (2017–2024).</p>

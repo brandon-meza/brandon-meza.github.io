@@ -394,6 +394,28 @@
         <h3>ja-rag-cite-or-abstain</h3>
         <div class="v">Local Japanese retrieval-augmented generation that cites a source or answers &ldquo;not found&rdquo;: 64% correct on 300 questions and &ldquo;not found&rdquo; on 92% of unanswerable ones. Retrieval ablations with bootstrap intervals and an LLM judge calibrated against reference grades.</div>
       </a>
+      <a class="hl-card" href="https://github.com/brandon-meza/ja-rag-service" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">LLM serving · MIT</div>
+        <h3>ja-rag-service</h3>
+        <div class="v">The Japanese RAG pipeline as a tested FastAPI service that cites a source or says &ldquo;not found&rdquo;: 63% correct on 300 questions through the API, no measured difference from the offline evaluation (&minus;1.7 points). Prometheus metrics, a container, a load test and a CI retrieval-regression gate.</div>
+      </a>
+    </div>
+    <div class="hl">
+      <a class="hl-card" href="https://github.com/brandon-meza/chem-rl" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">LLM post-training · MIT</div>
+        <h3>chem-rl</h3>
+        <div class="v">GRPO versus rejection-sampling SFT on Qwen3-1.7B, with rewards a program checks (RDKit), plus random- and format-only-reward controls. A negative result: the 14.8-point test gain was answer-format repair; with the format ignored, no trained arm beats the base model.</div>
+      </a>
+      <a class="hl-card" href="https://github.com/brandon-meza/molgen" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Generative chemistry · MIT</div>
+        <h3>molgen</h3>
+        <div class="v">A small SELFIES transformer that generates drug-like molecules, scored with the MOSES benchmark against its published baselines. The metric code is checked against MOSES's published values first; two controls that must fail; property conditioning checked with RDKit.</div>
+      </a>
+      <a class="hl-card" href="https://github.com/brandon-meza/membrane-screen" target="_blank" rel="noopener" style="color:inherit">
+        <div class="badge">Materials informatics · MIT</div>
+        <h3>membrane-screen</h3>
+        <div class="v">Ranks polymer membranes by CO<sub>2</sub> permeability on the public Bath dataset, evaluated by held-out polymer and held-out chemical family. A data audit found errors in the public structure column; split-conformal intervals and a shuffled-label control.</div>
+      </a>
     </div>
     <p style="font-size:.95rem;color:var(--muted)">Also released: <a href="https://github.com/brandon-meza/claude-kit-release" target="_blank" rel="noopener">claude-kit</a> — a research-agent toolkit encoding planning, validation and review conventions · <a href="https://github.com/brandon-meza/j-lens-release" target="_blank" rel="noopener">j-lens</a> — an Android application in Kotlin built on ML Kit · <a href="https://github.com/brandon-meza/termtheme-release" target="_blank" rel="noopener">termtheme</a> — reversible terminal theming for bash, tmux and the shell prompt. All repositories on <a href="https://github.com/brandon-meza" target="_blank" rel="noopener">GitHub</a>.</p>
   </div>
